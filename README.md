@@ -1,4 +1,4 @@
 StockSuggest
 ============
 
-Project to show the Backstack problem with Navigation drawer
+This Project shows the Navigation drawer menu sync problem with Backstack. 
