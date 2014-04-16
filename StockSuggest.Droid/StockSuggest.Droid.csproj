@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{707A6C6B-860E-4BC3-8F71-D4BD1B26D8B2}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>StockSuggest.Droid</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AssemblyName>StockSuggest.Droid</AssemblyName>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Support.v4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ActionBarDrawerController.cs" />
+    <Compile Include="Fragments\HomeFragment.cs" />
+    <Compile Include="Fragments\PicksFragment.cs" />
+    <Compile Include="Fragments\PortfolioFragment.cs" />
+    <Compile Include="Fragments\WatchListFragment.cs" />
+    <Compile Include="NavDrawerItem.cs" />
+    <Compile Include="Adapters\NavDrawerListAdapter.cs" />
+    <Compile Include="Adapters\PicksAdapter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\layout\listmenu.axml" />
+    <AndroidResource Include="Resources\drawable\ic_drawer_dark.png" />
+    <AndroidResource Include="Resources\drawable\ic_drawer_light.png" />
+    <AndroidResource Include="Resources\layout\fragment_home.axml" />
+    <AndroidResource Include="Resources\drawable\drawer_list_item_bg_normal.xml" />
+    <AndroidResource Include="Resources\drawable\drawer_list_selector.xml" />
+    <AndroidResource Include="Resources\drawable\counter_bg.xml" />
+    <AndroidResource Include="Resources\values\color.xml" />
+    <AndroidResource Include="Resources\drawable\drawer_list_item_bg_pressed.xml" />
+    <AndroidResource Include="Resources\drawable\ic_home.png" />
+    <AndroidResource Include="Resources\drawable\ic_picks.png" />
+    <AndroidResource Include="Resources\drawable\ic_portfolio.png" />
+    <AndroidResource Include="Resources\drawable\ic_watchlist.png" />
+    <AndroidResource Include="Resources\layout\fragment_picks.axml" />
+    <AndroidResource Include="Resources\drawable\card_background.xml" />
+    <AndroidResource Include="Resources\layout\listview_picks.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Fragments\" />
+    <Folder Include="Adapters\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StockSuggest.Core\StockSuggest.Core.csproj">
+      <Project>{45EB30B1-7F50-4A1B-98B3-00996F1BAAF9}</Project>
+      <Name>StockSuggest.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

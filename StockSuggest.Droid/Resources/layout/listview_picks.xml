@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/card_background"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout1">
+            <TextView
+                android:text="Stock"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textStockName"
+                android:gravity="left"
+                android:layout_alignParentLeft="true"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/textStockName"
+                android:id="@+id/textStockPrice"
+                android:gravity="right"
+                android:layout_alignParentRight="true"
+                android:textColor="@android:color/black" />
+            <TextView
+                android:text="Symbol"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textSymbol"
+                android:layout_below="@+id/textStockName"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/counter_text_color" />
+            <TextView
+                android:text="|"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/textSymbol"
+                android:id="@+id/textSep"
+                android:layout_below="@+id/textStockName"
+                android:layout_marginLeft="3dp" />
+            <TextView
+                android:text="Exchange"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/textSep"
+                android:id="@+id/textExchange"
+                android:layout_below="@id/textStockName"
+                android:layout_marginLeft="2dp" />
+            <TextView
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/textExchange"
+                android:id="@+id/textChange"
+                android:layout_below="@id/textStockPrice"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/counter_text_color"
+                android:gravity="right" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
