@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockSuggest.Droid", "Stock
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockSuggest.Core", "StockSuggest.Core\StockSuggest.Core.csproj", "{45EB30B1-7F50-4A1B-98B3-00996F1BAAF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockSuggest.IOS", "StockSuggest.IOS\StockSuggest.IOS.csproj", "{37F282B5-8B1F-48BA-9A95-9AC94E43CC99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -15,6 +17,18 @@ Global
 		AppStore|iPhone = AppStore|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37F282B5-8B1F-48BA-9A95-9AC94E43CC99}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{37F282B5-8B1F-48BA-9A95-9AC94E43CC99}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{37F282B5-8B1F-48BA-9A95-9AC94E43CC99}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{37F282B5-8B1F-48BA-9A95-9AC94E43CC99}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{37F282B5-8B1F-48BA-9A95-9AC94E43CC99}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{37F282B5-8B1F-48BA-9A95-9AC94E43CC99}.Debug|iPhone.Build.0 = Debug|iPhone
+		{37F282B5-8B1F-48BA-9A95-9AC94E43CC99}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{37F282B5-8B1F-48BA-9A95-9AC94E43CC99}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{37F282B5-8B1F-48BA-9A95-9AC94E43CC99}.Release|iPhone.ActiveCfg = Release|iPhone
+		{37F282B5-8B1F-48BA-9A95-9AC94E43CC99}.Release|iPhone.Build.0 = Release|iPhone
+		{37F282B5-8B1F-48BA-9A95-9AC94E43CC99}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{37F282B5-8B1F-48BA-9A95-9AC94E43CC99}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{45EB30B1-7F50-4A1B-98B3-00996F1BAAF9}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
 		{45EB30B1-7F50-4A1B-98B3-00996F1BAAF9}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
 		{45EB30B1-7F50-4A1B-98B3-00996F1BAAF9}.AppStore|iPhone.ActiveCfg = Release|Any CPU
@@ -41,6 +55,6 @@ Global
 		{707A6C6B-860E-4BC3-8F71-D4BD1B26D8B2}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = StockSuggest.Droid\StockSuggest.Droid.csproj
+		StartupItem = StockSuggest.IOS\StockSuggest.IOS.csproj
 	EndGlobalSection
 EndGlobal
