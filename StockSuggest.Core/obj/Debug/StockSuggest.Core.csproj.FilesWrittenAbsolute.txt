@@ -1,0 +1,6 @@
+/Users/RohithC/Rohith/Projects/StockSuggest/StockSuggest.Core/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile7.AssemblyAttribute.cs
+/Users/RohithC/Rohith/Projects/StockSuggest/StockSuggest.Core/bin/Debug/StockSuggest.Core.dll.mdb
+/Users/RohithC/Rohith/Projects/StockSuggest/StockSuggest.Core/bin/Debug/StockSuggest.Core.dll
+/Users/RohithC/Rohith/Projects/StockSuggest/StockSuggest.Core/obj/Debug/StockSuggest.Core.dll
+/Users/RohithC/Rohith/Projects/StockSuggest/StockSuggest.Core/obj/Debug/StockSuggest.Core.dll.mdb
+/Users/RohithC/Rohith/Projects/StockSuggest/StockSuggest.Core/bin/Debug/Newtonsoft.Json.dll

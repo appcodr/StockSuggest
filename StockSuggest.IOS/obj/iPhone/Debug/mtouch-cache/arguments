@@ -1,0 +1,33 @@
+# Version: 7.2.5.5 (87026b6)
+# [first argument, ignore] # /Users/RohithC/Rohith/Projects/StockSuggest/StockSuggest.IOS/bin/iPhone/Debug/mtouch.exe
+/Developer/MonoTouch/usr/bin/mtouch \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	/Users/RohithC/Rohith/Projects/StockSuggest/StockSuggest.IOS/obj/iPhone/Debug/mtouch-cache \
+	--nomanifest \
+	--nosign \
+	-dev \
+	/Users/RohithC/Rohith/Projects/StockSuggest/StockSuggest.IOS/bin/iPhone/Debug/StockSuggestIOS.app \
+	-r \
+	/Users/RohithC/Rohith/Projects/StockSuggest/StockSuggest.Core/bin/Debug/StockSuggest.Core.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/monotouch.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/MonoTouch.Dialog-1.dll \
+	-r \
+	/Users/RohithC/Rohith/Projects/StockSuggest/Components/flyoutnavigation-1.3/lib/ios/FlyoutNavigation.dll \
+	-debug \
+	-linksdkonly \
+	-sdk \
+	7.1 \
+	-targetver \
+	6.0 \
+	--abi=armv7 \
+	/Users/RohithC/Rohith/Projects/StockSuggest/StockSuggest.IOS/bin/iPhone/Debug/StockSuggest.exe \
